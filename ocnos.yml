@@ -1,0 +1,17 @@
+# topology ocnos
+name: ocnos
+
+topology:
+  nodes:
+    ocnos1:
+      kind: ipinfusion_ocnos
+      image: vrnetlab/vr-ocnos:SP2
+      # startup-config: srl1.cfg
+    PC1:
+      kind: linux
+      image: praqma/network-multitool:extra
+      exec:
+      - ip -6 route del default dev eth0
+
+  links:
+    - endpoints: ["ocnos1:eth1", "PC1:eth1"]
