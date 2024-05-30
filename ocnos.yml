@@ -5,7 +5,7 @@ topology:
   nodes:
     ocnos1:
       kind: ipinfusion_ocnos
-      image: vrnetlab/vr-ocnos:SP2
+      image: vrnetlab/vr-ocnos:6.0.2.112
       # startup-config: srl1.cfg
     PC1:
       kind: linux
