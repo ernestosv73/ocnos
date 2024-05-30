@@ -6,13 +6,13 @@ topology:
     # Switch
     ocnossw:
       kind: ipinfusion_ocnos
-      image: vrnetlab/vr-ocnos:SP2
+      image: vrnetlab/vr-ocnos:6.0.2.112
       # startup-config: srlsw/config.json
       
     # Router
     ocnosrt:
       kind: ipinfusion_ocnos
-      image: vrnetlab/vr-ocnos:SP2
+      image: vrnetlab/vr-ocnos:6.0.2.112
       # startup-config: srlrt/config.json
            
     PC1:
