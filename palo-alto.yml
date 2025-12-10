@@ -5,7 +5,7 @@ topology:
   nodes:
     palo:
       kind: paloalto_panos
-      image: vrnetlab/paloalto_pa-vm:10.2.3
+      image: vrnetlab/paloalto_pa-vm:10.1.0
     PC1:
       kind: linux
       image: docker.io/esanchezv/kaliipv6:latest
