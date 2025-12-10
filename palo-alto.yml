@@ -1,0 +1,16 @@
+# topology palo
+name: palo-topo
+
+topology:
+  nodes:
+    palo:
+      kind: paloalto_panos
+      image: vrnetlab/paloalto_pa-vm:10.2.3
+    PC1:
+      kind: linux
+      image: docker.io/esanchezv/kaliipv6:latest
+      exec:
+      - ip -6 route del default dev eth0
+
+  links:
+    - endpoints: ["palo:eth1", "PC1:eth1"]
